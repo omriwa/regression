@@ -5,6 +5,13 @@ dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:,:-1].values
 Y = dataset.iloc[:,-1].values
 
+# hot encoding
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+import numpy as np
+
+ct = ColumnTransformer(transformers=[("encoder",OneHotEncoder(),[0])],remainder="passthrough")
+X = np.array(ct.transform(X))
 # splitting the dataset
 from sklearn.model_selection import train_test_split
 
