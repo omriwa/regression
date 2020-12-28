@@ -1,7 +1,7 @@
 # import dataset
 import pandas as pd
 
-dataset = pd.read_csv('Salary_Data.csv')
+dataset = pd.read_csv('50_Startups.csv')
 X = dataset.iloc[:,:-1].values
 Y = dataset.iloc[:,-1].values
 
