@@ -1,4 +1,4 @@
-# decision_tree_regression
+# decision tree regression
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
@@ -12,12 +12,12 @@ Additional line of information text about what the project does. Your introducti
 
 ## Prerequisites
 
-## Installing decision_tree_regression
+## Installing decision tree regression
 
 ```
-## Using decision_tree_regression
+## Using decision tree regression
 
-To use decision_tree_regression, follow these steps:
+To use decision tree regression, follow these steps:
 
 ```
 python main.py
