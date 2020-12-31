@@ -24,3 +24,16 @@ plt.title("salary vs level")
 plt.xlabel("level")
 plt.ylabel("salary")
 plt.show()
+
+from  sklearn.preprocessing import PolynomialFeatures
+import numpy as np
+
+X_grid = np.arange(min(X),max(X),0.1)
+X_grid = X_grid.reshape(len(X_grid),1)
+poly_scaler = PolynomialFeatures(degree=5)
+plt.scatter(X,Y, color="green")
+plt.plot(X_grid,regressor.predict(X_grid),color="blue")
+plt.title("salary vs level 2")
+plt.xlabel("level")
+plt.xlabel("salary")
+plt.show() 
