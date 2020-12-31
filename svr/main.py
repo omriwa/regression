@@ -28,8 +28,9 @@ y_pred = y_scaler.inverse_transform(regressor.predict(x_scaler.transform([[6.5]]
 # Visualsing
 import  matplotlib.pyplot as plt
 
-
-# plt.title("salary vs level")
-# plt.xlabel("level")
-# plt.xlabel("salary")
-# plt.show()
+plt.scatter(x_scaler.inverse_transform(X),y_scaler.inverse_transform(Y), color="green")
+plt.plot(x_scaler.inverse_transform(X),y_scaler.inverse_transform(regressor.predict(X)),color="blue")
+plt.title("salary vs level")
+plt.xlabel("level")
+plt.xlabel("salary")
+plt.show()
