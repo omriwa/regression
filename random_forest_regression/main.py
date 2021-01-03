@@ -5,9 +5,9 @@ dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:,1:-1].values
 Y = dataset.iloc[:,-1].values
 # import regression model
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 
-regressor = DecisionTreeRegressor(random_state=0)
+regressor = RandomForestRegressor(n_estimators=20, random_state=0)
 regressor.fit(X,Y)
 
 #  Test
