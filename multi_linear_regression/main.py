@@ -26,3 +26,8 @@ regressor.fit(X_train,Y_train)
 
 #  Test
 y_pred = regressor.predict(X_test)
+
+# evaluating the model
+from sklearn.metrics import r2_score
+
+print(r2_score(Y_test,y_pred))
